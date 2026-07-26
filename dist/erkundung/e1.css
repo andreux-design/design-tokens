@@ -1,0 +1,28 @@
+/* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
+ * Medium:      erkundung e1 (Editorial)
+ * Quell-Hash:  65a8ad65b978
+ * Aenderungen gehoeren nach tokens/, dann neu generieren.
+ */
+:root {
+  /* Editorial: Das Dokument ist ein Text */
+  /* Verhaeltnis 1.2, Basis 9.75pt */
+  
+  --schrift-m2: 6.75pt;
+  --schrift-m1: 8.25pt;
+  --schrift-0: 9.75pt;
+  --schrift-1: 11.75pt;
+  --schrift-2: 14pt;
+  --schrift-3: 16.75pt;
+  --schrift-4: 20.25pt;
+  
+  --familie-display: "Instrument Serif", Georgia, serif;
+  --familie-text: "Newsreader", Georgia, serif;
+  --familie-meta: "Inter", -apple-system, sans-serif;
+  
+  --zeile-text: 1.55;
+  
+  --akzent: #8A3324;
+  --akzent-name: "oxidrot";
+  
+  --stationsabstand: 8mm;
+}

@@ -1,0 +1,59 @@
+{
+  "_": "Drei Erkundungen. Jede ist eine eigene Projektion der Leiter mit eigenem Verhältnis, eigener Basis und eigener Schriftwahl.",
+  "_zweck": "Sie werden als Seite-1-PDFs gerendert und verglichen. Der Gewinner wird ausgebaut, die beiden anderen werden gelöscht. Deshalb liegen sie in einer eigenen Datei und nicht in medien.json.",
+  "_regel": "Auch hier steht kein fertiger Größenwert. Nur Verhältnis, Basis, Raster. Sonst wäre die Erkundung schon der Bruch des Systems, das sie vorbereiten soll.",
+
+  "e1": {
+    "name": "Editorial",
+    "argument": "Das Dokument ist ein Text",
+    "verhaeltnis": 1.2,
+    "basis": 9.75,
+    "raster": 0.25,
+    "stufen": [-2, -1, 0, 1, 2, 3, 4],
+    "akzent": "oxidrot",
+    "schrift": {
+      "display": "\"Instrument Serif\", Georgia, serif",
+      "text": "\"Newsreader\", Georgia, serif",
+      "meta": "\"Inter\", -apple-system, sans-serif"
+    },
+    "zeile": { "text": 1.55 },
+    "stationsabstand": 8,
+    "_risiko": "1,2 plus Serifengrundtext plus 8 mm Stationsabstand frisst den Puffer. Kann auf drei Seiten laufen."
+  },
+
+  "e2": {
+    "name": "Technisch",
+    "argument": "Das Dokument ist eine Datenstruktur",
+    "verhaeltnis": 1.125,
+    "basis": 9.25,
+    "raster": 0.25,
+    "stufen": [-3, -2, -1, 0, 1, 2, 5],
+    "akzent": "petrol",
+    "schrift": {
+      "display": "\"IBM Plex Sans\", sans-serif",
+      "text": "\"IBM Plex Sans\", sans-serif",
+      "meta": "\"IBM Plex Mono\", ui-monospace, monospace"
+    },
+    "zeile": { "text": 1.45 },
+    "stationsabstand": 6,
+    "_risiko": "Liest als Ingenieur, nicht als Designer. Dokumentation eines Systems statt Arbeit eines Menschen."
+  },
+
+  "e3": {
+    "name": "Warm",
+    "argument": "Das Dokument ist ein Mensch, der spricht",
+    "verhaeltnis": 1.155,
+    "basis": 9.75,
+    "raster": 0.25,
+    "stufen": [-2, -1, 0, 1, 2, 3, 5],
+    "akzent": "ocker",
+    "schrift": {
+      "display": "\"Fraunces\", Georgia, serif",
+      "text": "\"Alegreya Sans\", -apple-system, sans-serif",
+      "meta": "\"Alegreya Sans\", -apple-system, sans-serif"
+    },
+    "zeile": { "text": 1.5 },
+    "stationsabstand": 12,
+    "_risiko": "Ohne jede Linie zerfällt die Struktur im Drei-Sekunden-Scan, und das ist die einzige Dauer, die zählt."
+  }
+}

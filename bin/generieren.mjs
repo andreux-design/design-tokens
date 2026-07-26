@@ -19,6 +19,17 @@ const wurzel = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const lies = (p) => readFileSync(resolve(wurzel, p), "utf8");
 
 const quellen = ["tokens/leiter.json", "tokens/medien.json", "tokens/farbe.json"];
+
+// erkundungen.json ist temporaer und darf fehlen, muss aber in den Hash,
+// solange es existiert: die Erkundungsdateien tragen denselben Stempel,
+// und ein Stempel, der seine eigene Quelle nicht abdeckt, erkennt nichts.
+try {
+  lies("tokens/erkundungen.json");
+  quellen.push("tokens/erkundungen.json");
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+}
+
 const roh = Object.fromEntries(quellen.map((p) => [p, lies(p)]));
 const leiter = JSON.parse(roh["tokens/leiter.json"]);
 const medien = JSON.parse(roh["tokens/medien.json"]);
@@ -208,6 +219,47 @@ const figma = {
 };
 writeFileSync(resolve(wurzel, "dist/tokens.figma.json"), JSON.stringify(figma, null, 2) + "\n", "utf8");
 console.log("dist/tokens.figma.json");
+
+/* ---------- Erkundungen ---------- */
+
+// Eigene Projektionen mit eigenem Verhaeltnis. Sie erben Farbe, Raum und
+// Strich vom Druckmedium und ueberschreiben nur Schrift und Rhythmus.
+// Auch hier steht kein fertiger Groessenwert in der Quelle.
+try {
+  const erk = JSON.parse(lies("tokens/erkundungen.json"));
+  mkdirSync(resolve(wurzel, "dist/erkundung"), { recursive: true });
+
+  for (const [id, e] of Object.entries(erk).filter(([k]) => !k.startsWith("_"))) {
+    const z = [];
+    z.push(`/* ${e.name}: ${e.argument} */`);
+    z.push(`/* Verhaeltnis ${e.verhaeltnis}, Basis ${e.basis}pt */`);
+    z.push("");
+
+    e.stufen.forEach((n) => {
+      const wert = raste(e.basis * Math.pow(e.verhaeltnis, n), e.raster);
+      z.push(`--schrift-${n < 0 ? "m" + -n : n}: ${zahl(wert, e.raster)}pt;`);
+    });
+
+    z.push("");
+    Object.entries(e.schrift).forEach(([k, v]) => z.push(`--familie-${k}: ${v};`));
+
+    z.push("");
+    Object.entries(e.zeile).forEach(([k, v]) => z.push(`--zeile-${k}: ${v};`));
+
+    const a = farbe.akzent.kandidaten[e.akzent];
+    if (!a) throw new Error(`${id}: Akzent "${e.akzent}" nicht in farbe.json`);
+    z.push("", `--akzent: ${a.hell};`, `--akzent-name: "${e.akzent}";`);
+
+    const stat = raste(e.stationsabstand * medien.druck.raum.basis, medien.druck.raum.raster);
+    z.push("", `--stationsabstand: ${zahl(stat, medien.druck.raum.raster)}mm;`);
+
+    const css = kopf(`erkundung ${id} (${e.name})`) + ":root {\n" + block(z) + "\n}\n";
+    writeFileSync(resolve(wurzel, `dist/erkundung/${id}.css`), css, "utf8");
+    console.log(`dist/erkundung/${id}.css`);
+  }
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+}
 
 writeFileSync(
   resolve(wurzel, "dist/leiter.json"),

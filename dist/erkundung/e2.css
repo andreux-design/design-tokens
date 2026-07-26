@@ -1,0 +1,28 @@
+/* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
+ * Medium:      erkundung e2 (Technisch)
+ * Quell-Hash:  65a8ad65b978
+ * Aenderungen gehoeren nach tokens/, dann neu generieren.
+ */
+:root {
+  /* Technisch: Das Dokument ist eine Datenstruktur */
+  /* Verhaeltnis 1.125, Basis 9.25pt */
+  
+  --schrift-m3: 6.5pt;
+  --schrift-m2: 7.25pt;
+  --schrift-m1: 8.25pt;
+  --schrift-0: 9.25pt;
+  --schrift-1: 10.5pt;
+  --schrift-2: 11.75pt;
+  --schrift-5: 16.75pt;
+  
+  --familie-display: "IBM Plex Sans", sans-serif;
+  --familie-text: "IBM Plex Sans", sans-serif;
+  --familie-meta: "IBM Plex Mono", ui-monospace, monospace;
+  
+  --zeile-text: 1.45;
+  
+  --akzent: #155E75;
+  --akzent-name: "petrol";
+  
+  --stationsabstand: 6mm;
+}

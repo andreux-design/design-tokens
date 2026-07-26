@@ -1,0 +1,28 @@
+/* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
+ * Medium:      erkundung e3 (Warm)
+ * Quell-Hash:  65a8ad65b978
+ * Aenderungen gehoeren nach tokens/, dann neu generieren.
+ */
+:root {
+  /* Warm: Das Dokument ist ein Mensch, der spricht */
+  /* Verhaeltnis 1.155, Basis 9.75pt */
+  
+  --schrift-m2: 7.25pt;
+  --schrift-m1: 8.5pt;
+  --schrift-0: 9.75pt;
+  --schrift-1: 11.25pt;
+  --schrift-2: 13pt;
+  --schrift-3: 15pt;
+  --schrift-5: 20pt;
+  
+  --familie-display: "Fraunces", Georgia, serif;
+  --familie-text: "Alegreya Sans", -apple-system, sans-serif;
+  --familie-meta: "Alegreya Sans", -apple-system, sans-serif;
+  
+  --zeile-text: 1.5;
+  
+  --akzent: #94420F;
+  --akzent-name: "ocker";
+  
+  --stationsabstand: 12mm;
+}
