@@ -1,0 +1,47 @@
+{
+  "_": "Die einheitenlose Leiter. Einzige Quelle für alle Größen.",
+  "_regel": "Hier stehen Verhältnisse und Stufen, niemals Einheiten und niemals ein Medium. Welche Einheit eine Stufe bekommt, entscheidet medien.json.",
+
+  "schrift": {
+    "verhaeltnis": 1.125,
+    "_verhaeltnis": "Große Sekunde. Bewusst eng: der gesamte nutzbare Bereich im CV liegt zwischen etwa 6,75 und 19,25 pt. Bei 1,25 passen dort nur fünf Stufen, und dann fehlt eine eigene Größe für Meta, Label und Fließtext gleichzeitig.",
+    "stufen": [-3, -2, -1, 0, 1, 2, 3, 4, 6, 9],
+    "_stufen": "Display-Größen tasten jede dritte Stufe ab. Damit ist das wirksame Überschriftenverhältnis 1,125^3 = 1,4238, ohne dass ein zweites Verhältnis eingeführt wird."
+  },
+
+  "raum": {
+    "stufen": [0.5, 0.75, 1, 1.5, 2, 3, 4, 6, 8, 12, 16, 24, 32],
+    "_stufen": "Geometrisch, Verdopplung alle zwei Schritte. Deckt vom Haarabstand bis zum Seitenrand alles ab, was in beiden Medien vorkommt."
+  },
+
+  "zeile": {
+    "_": "Zeilenhöhen sind bereits Verhältnisse und deshalb medienunabhängig. Das ist die einzige Stelle, an der eine rohe Zahl in beiden Projektionen identisch auftaucht.",
+    "display": 1.08,
+    "ueberschrift": 1.2,
+    "text": 1.5,
+    "meta": 1.4,
+    "versal": 1.2
+  },
+
+  "spur": {
+    "_": "Laufweite als Funktion der Größe, nicht pro Element. Ab dem 1,4-fachen der Grundgröße wird optisch enger gestellt.",
+    "display": -0.02,
+    "gross": -0.01,
+    "text": 0,
+    "versal": 0.08,
+    "mono": 0
+  },
+
+  "strich": {
+    "_": "0,4 pt liegt unter der Schwelle, ab der Chromium im Druck zuverlässig zeichnet. 0,5 pt entspricht 0,176 mm und ist die Untergrenze.",
+    "stufen": [0.5, 1.5]
+  },
+
+  "mass": {
+    "_": "Zeilenlängen in ch. Achtung: 1ch ist die Breite der Null, in Inter etwa 0,60em, während die mittlere Vorbreite deutscher Kleinbuchstaben bei etwa 0,52em liegt. Die tatsächliche Zeichenzahl ist also rund 1,15-mal der ch-Wert.",
+    "text": 72,
+    "text-serif": 64,
+    "prosa-web": 68,
+    "claim": 22
+  }
+}

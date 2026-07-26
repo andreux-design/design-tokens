@@ -1,0 +1,122 @@
+{
+  "erzeugt": "generiert von bin/kontrast.mjs",
+  "themen": {
+    "hell": {
+      "flaeche": "#FFFFFF",
+      "rollen": {
+        "flaeche-gehoben": {
+          "token": "tinte-05",
+          "hex": "#F4F6F8",
+          "kontrast": 1.08,
+          "schwelle": null
+        },
+        "tinte": {
+          "token": "tinte-90",
+          "hex": "#15181D",
+          "kontrast": 17.79,
+          "schwelle": 7
+        },
+        "tinte-gedaempft": {
+          "token": "tinte-60",
+          "hex": "#565B63",
+          "kontrast": 6.84,
+          "schwelle": 4.5
+        },
+        "tinte-leise": {
+          "token": "tinte-50",
+          "hex": "#6C7280",
+          "kontrast": 4.82,
+          "schwelle": 4.5
+        },
+        "linie": {
+          "token": "tinte-20",
+          "hex": "#D2D6DB",
+          "kontrast": 1.46,
+          "schwelle": null
+        },
+        "linie-stark": {
+          "token": "tinte-40",
+          "hex": "#8E949D",
+          "kontrast": 3.06,
+          "schwelle": 3
+        }
+      }
+    },
+    "dunkel": {
+      "flaeche": "#0B0E12",
+      "rollen": {
+        "flaeche-gehoben": {
+          "token": "tinte-90",
+          "hex": "#15181D",
+          "kontrast": 1.09,
+          "schwelle": null
+        },
+        "tinte": {
+          "token": "tinte-10",
+          "hex": "#E7EAEE",
+          "kontrast": 16.03,
+          "schwelle": 7
+        },
+        "tinte-gedaempft": {
+          "token": "tinte-30",
+          "hex": "#B0B6BD",
+          "kontrast": 9.46,
+          "schwelle": 4.5
+        },
+        "tinte-leise": {
+          "token": "tinte-40",
+          "hex": "#8E949D",
+          "kontrast": 6.33,
+          "schwelle": 4.5
+        },
+        "linie": {
+          "token": "tinte-80",
+          "hex": "#262A31",
+          "kontrast": 1.34,
+          "schwelle": null
+        },
+        "linie-stark": {
+          "token": "tinte-50",
+          "hex": "#6C7280",
+          "kontrast": 4.01,
+          "schwelle": 3
+        }
+      }
+    }
+  },
+  "akzente": {
+    "oxidrot": {
+      "register": "E1 editorial",
+      "hell": {
+        "hex": "#8A3324",
+        "kontrast": 8.14
+      },
+      "dunkel": {
+        "hex": "#E8927A",
+        "kontrast": 8.13
+      }
+    },
+    "petrol": {
+      "register": "E2 technisch",
+      "hell": {
+        "hex": "#155E75",
+        "kontrast": 7.27
+      },
+      "dunkel": {
+        "hex": "#6FC5DE",
+        "kontrast": 9.87
+      }
+    },
+    "ocker": {
+      "register": "E3 warm",
+      "hell": {
+        "hex": "#94420F",
+        "kontrast": 6.9
+      },
+      "dunkel": {
+        "hex": "#E3A264",
+        "kontrast": 8.86
+      }
+    }
+  }
+}

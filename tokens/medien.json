@@ -1,0 +1,39 @@
+{
+  "_": "Projektion der einheitenlosen Leiter auf ein konkretes Medium.",
+  "_regel": "Kein Verhältnis, keine Stufe. Nur Basis, Einheit und Rasterung. Wer hier ein Verhältnis einträgt, hat das System gebrochen.",
+
+  "druck": {
+    "schrift": {
+      "basis": 9.5,
+      "einheit": "pt",
+      "raster": 0.25,
+      "stufen": [-3, -2, -1, 0, 1, 2, 6],
+      "_stufen": "Sieben Größen. Mehr trägt eine zweiseitige A4-Seite nicht."
+    },
+    "raum": {
+      "basis": 1,
+      "einheit": "mm",
+      "raster": 0.25
+    },
+    "strich": { "einheit": "pt", "faktor": 1 },
+    "dunkelmodus": false,
+    "_dunkelmodus": "Der Generator bricht ab, wenn in die Druckausgabe eine prefers-color-scheme-Regel geriete. Ein getöntes A4-Rechteck auf einem Bürodrucker liest sich als Fehler."
+  },
+
+  "web": {
+    "schrift": {
+      "basis": 1.0625,
+      "einheit": "rem",
+      "raster": 0.0625,
+      "stufen": [-2, -1, 0, 1, 3, 6, 9],
+      "_basis": "1,0625rem = 17px bei 16px Grundgröße. Bewusst über 16, weil die Seite Fließtext trägt und nicht Bedienoberfläche ist."
+    },
+    "raum": {
+      "basis": 0.25,
+      "einheit": "rem",
+      "raster": 0.0625
+    },
+    "strich": { "einheit": "px", "faktor": 2, "raster": 1 },
+    "dunkelmodus": true
+  }
+}

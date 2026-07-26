@@ -1,0 +1,42 @@
+{
+  "_hinweis": "Manueller Import. Keine Synchronisation, es gibt keine Gegenstelle.",
+  "quellHash": "0ad8f928a069",
+  "farbe": {
+    "tinte-95": "#0B0E12",
+    "tinte-90": "#15181D",
+    "tinte-80": "#262A31",
+    "tinte-70": "#3C4149",
+    "tinte-60": "#565B63",
+    "tinte-50": "#6C7280",
+    "tinte-40": "#8E949D",
+    "tinte-30": "#B0B6BD",
+    "tinte-20": "#D2D6DB",
+    "tinte-10": "#E7EAEE",
+    "tinte-05": "#F4F6F8",
+    "weiss": "#FFFFFF"
+  },
+  "schrift": {
+    "schrift--2": "0.8125rem",
+    "schrift--1": "0.9375rem",
+    "schrift-0": "1.0625rem",
+    "schrift-1": "1.1875rem",
+    "schrift-3": "1.5rem",
+    "schrift-6": "2.125rem",
+    "schrift-9": "3.0625rem"
+  },
+  "raum": {
+    "raum-0": "0.125rem",
+    "raum-1": "0.1875rem",
+    "raum-2": "0.25rem",
+    "raum-3": "0.375rem",
+    "raum-4": "0.5rem",
+    "raum-5": "0.75rem",
+    "raum-6": "1rem",
+    "raum-7": "1.5rem",
+    "raum-8": "2rem",
+    "raum-9": "3rem",
+    "raum-10": "4rem",
+    "raum-11": "6rem",
+    "raum-12": "8rem"
+  }
+}

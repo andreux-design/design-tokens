@@ -1,0 +1,20 @@
+{
+  "name": "@andreux/design-tokens",
+  "version": "0.1.0",
+  "description": "Typografisches Tokensystem mit einer einheitenlosen Leiter und zwei Projektionen, Druck und Web.",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist", "tokens"],
+  "exports": {
+    "./print.css": "./dist/tokens.print.css",
+    "./web.css": "./dist/tokens.web.css",
+    "./leiter.json": "./dist/leiter.json",
+    "./kontrast.json": "./dist/kontrast.json",
+    "./figma.json": "./dist/tokens.figma.json"
+  },
+  "scripts": {
+    "bauen": "node bin/generieren.mjs",
+    "test": "node bin/leiter-test.mjs && node bin/kontrast.mjs && node bin/keine-personendaten.mjs",
+    "alles": "npm run bauen && npm test"
+  }
+}

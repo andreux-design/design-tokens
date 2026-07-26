@@ -1,0 +1,134 @@
+/* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
+ * Medium:      druck
+ * Quell-Hash:  0ad8f928a069
+ * Aenderungen gehoeren nach tokens/, dann neu generieren.
+ */
+:root {
+  /* Schrift */
+  --schrift-m3: 6.75pt;
+  --schrift-m2: 7.5pt;
+  --schrift-m1: 8.5pt;
+  --schrift-0: 9.5pt;
+  --schrift-1: 10.75pt;
+  --schrift-2: 12pt;
+  --schrift-6: 19.25pt;
+  
+  /* Raum */
+  --raum-0: 0.5mm;
+  --raum-1: 0.75mm;
+  --raum-2: 1mm;
+  --raum-3: 1.5mm;
+  --raum-4: 2mm;
+  --raum-5: 3mm;
+  --raum-6: 4mm;
+  --raum-7: 6mm;
+  --raum-8: 8mm;
+  --raum-9: 12mm;
+  --raum-10: 16mm;
+  --raum-11: 24mm;
+  --raum-12: 32mm;
+  
+  /* Strich */
+  --strich-0: 0.5pt;
+  --strich-1: 1.5pt;
+  
+  /* Zeilenhoehe, medienunabhaengig weil bereits Verhaeltnis */
+  --zeile-display: 1.08;
+  --zeile-ueberschrift: 1.2;
+  --zeile-text: 1.5;
+  --zeile-meta: 1.4;
+  --zeile-versal: 1.2;
+  
+  /* Laufweite */
+  --spur-display: -0.02em;
+  --spur-gross: -0.01em;
+  --spur-text: 0em;
+  --spur-versal: 0.08em;
+  --spur-mono: 0em;
+  
+  /* Zeilenlaenge */
+  --mass-text: 72ch;
+  --mass-text-serif: 64ch;
+  --mass-prosa-web: 68ch;
+  --mass-claim: 22ch;
+  
+  /* Tinte */
+  --tinte-95: #0B0E12;
+  --tinte-90: #15181D;
+  --tinte-80: #262A31;
+  --tinte-70: #3C4149;
+  --tinte-60: #565B63;
+  --tinte-50: #6C7280;
+  --tinte-40: #8E949D;
+  --tinte-30: #B0B6BD;
+  --tinte-20: #D2D6DB;
+  --tinte-10: #E7EAEE;
+  --tinte-05: #F4F6F8;
+  --weiss: #FFFFFF;
+  
+  /* Rollen, hell */
+  --flaeche: var(--weiss);
+  --flaeche-gehoben: var(--tinte-05);
+  --tinte: var(--tinte-90);
+  --tinte-gedaempft: var(--tinte-60);
+  --tinte-leise: var(--tinte-50);
+  --linie: var(--tinte-20);
+  --linie-stark: var(--tinte-40);
+
+  /* Englische Aliase, generiert */
+  --type-m3: var(--schrift-m3);
+  --type-m2: var(--schrift-m2);
+  --type-m1: var(--schrift-m1);
+  --type-0: var(--schrift-0);
+  --type-1: var(--schrift-1);
+  --type-2: var(--schrift-2);
+  --type-6: var(--schrift-6);
+  --space-0: var(--raum-0);
+  --space-1: var(--raum-1);
+  --space-2: var(--raum-2);
+  --space-3: var(--raum-3);
+  --space-4: var(--raum-4);
+  --space-5: var(--raum-5);
+  --space-6: var(--raum-6);
+  --space-7: var(--raum-7);
+  --space-8: var(--raum-8);
+  --space-9: var(--raum-9);
+  --space-10: var(--raum-10);
+  --space-11: var(--raum-11);
+  --space-12: var(--raum-12);
+  --stroke-0: var(--strich-0);
+  --stroke-1: var(--strich-1);
+  --leading-display: var(--zeile-display);
+  --leading-ueberschrift: var(--zeile-ueberschrift);
+  --leading-text: var(--zeile-text);
+  --leading-meta: var(--zeile-meta);
+  --leading-versal: var(--zeile-versal);
+  --tracking-display: var(--spur-display);
+  --tracking-gross: var(--spur-gross);
+  --tracking-text: var(--spur-text);
+  --tracking-versal: var(--spur-versal);
+  --tracking-mono: var(--spur-mono);
+  --measure-text: var(--mass-text);
+  --measure-text-serif: var(--mass-text-serif);
+  --measure-prosa-web: var(--mass-prosa-web);
+  --measure-claim: var(--mass-claim);
+  --ink-95: var(--tinte-95);
+  --ink-90: var(--tinte-90);
+  --ink-80: var(--tinte-80);
+  --ink-70: var(--tinte-70);
+  --ink-60: var(--tinte-60);
+  --ink-50: var(--tinte-50);
+  --ink-40: var(--tinte-40);
+  --ink-30: var(--tinte-30);
+  --ink-20: var(--tinte-20);
+  --ink-10: var(--tinte-10);
+  --ink-05: var(--tinte-05);
+  --white: var(--weiss);
+  --surface: var(--flaeche);
+  --surface-gehoben: var(--flaeche-gehoben);
+  --ink: var(--tinte);
+  --ink-gedaempft: var(--tinte-gedaempft);
+  --ink-leise: var(--tinte-leise);
+  --rule: var(--linie);
+  --rule-stark: var(--linie-stark);
+}

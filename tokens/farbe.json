@@ -1,0 +1,62 @@
+{
+  "_": "Eine Tintenrampe, darüber eine getrennte Rollenschicht.",
+  "_warum_getrennt": "Nur Rollen kippen im Dunkelmodus, und sie kippen nicht symmetrisch. Die naive Spiegelung würde tinte-leise in beiden Themes auf tinte-50 legen; auf tinte-95 sind das 3,69:1 und fallen durch AA. Die Dunkelvariante muss um eine Stufe verschieben. Genau deshalb darf die Rampe keine Rollen kennen.",
+
+  "rampe": {
+    "tinte-95": "#0B0E12",
+    "tinte-90": "#15181D",
+    "tinte-80": "#262A31",
+    "tinte-70": "#3C4149",
+    "tinte-60": "#565B63",
+    "tinte-50": "#6C7280",
+    "tinte-40": "#8E949D",
+    "tinte-30": "#B0B6BD",
+    "tinte-20": "#D2D6DB",
+    "tinte-10": "#E7EAEE",
+    "tinte-05": "#F4F6F8",
+    "weiss": "#FFFFFF"
+  },
+
+  "rollen": {
+    "hell": {
+      "flaeche": "weiss",
+      "flaeche-gehoben": "tinte-05",
+      "tinte": "tinte-90",
+      "tinte-gedaempft": "tinte-60",
+      "tinte-leise": "tinte-50",
+      "linie": "tinte-20",
+      "linie-stark": "tinte-40"
+    },
+    "dunkel": {
+      "flaeche": "tinte-95",
+      "flaeche-gehoben": "tinte-90",
+      "tinte": "tinte-10",
+      "tinte-gedaempft": "tinte-30",
+      "tinte-leise": "tinte-40",
+      "linie": "tinte-80",
+      "linie-stark": "tinte-50"
+    }
+  },
+
+  "akzent": {
+    "_aufgabe": "Der Akzent markiert etwas Überprüfbares: Link, Quelle, Ergebnislabel. Keine Überschriften, keine Dekoration, keine Markenstimmung. Sobald die Aufgabe feststeht, hört die Frage nach der Anzahl auf.",
+    "_offen": "Welcher Kandidat gewinnt, entscheidet die Erkundung. Bis dahin ist keiner als Standard gesetzt.",
+    "kandidaten": {
+      "oxidrot": { "hell": "#8A3324", "dunkel": "#E8927A", "register": "E1 editorial" },
+      "petrol": { "hell": "#155E75", "dunkel": "#6FC5DE", "register": "E2 technisch" },
+      "ocker": { "hell": "#94420F", "dunkel": "#E3A264", "register": "E3 warm" }
+    }
+  },
+
+  "schwellen": {
+    "_": "Geprüft wird gegen WCAG 2.1. APCA wird mitberechnet und protokolliert, aber nicht als Gate verwendet, weil eine Prüfung im Zweifel nach WCAG 2.1 erfolgt.",
+    "tinte": 7,
+    "tinte-gedaempft": 4.5,
+    "tinte-leise": 4.5,
+    "akzent": 4.5,
+    "linie-stark": 3,
+    "linie": null,
+    "flaeche-gehoben": null,
+    "_null": "null heißt dekorativ und ausdrücklich von der Prüfung ausgenommen. Die Ausnahme steht hier in der Quelle, statt sich aus dem Schweigen des Tests zu ergeben."
+  }
+}

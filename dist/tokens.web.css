@@ -1,0 +1,181 @@
+/* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
+ * Medium:      web
+ * Quell-Hash:  0ad8f928a069
+ * Aenderungen gehoeren nach tokens/, dann neu generieren.
+ */
+:root {
+  /* Schrift */
+  --schrift-m2: 0.8125rem;
+  --schrift-m1: 0.9375rem;
+  --schrift-0: 1.0625rem;
+  --schrift-1: 1.1875rem;
+  --schrift-3: 1.5rem;
+  --schrift-6: 2.125rem;
+  --schrift-9: 3.0625rem;
+  
+  /* Raum */
+  --raum-0: 0.125rem;
+  --raum-1: 0.1875rem;
+  --raum-2: 0.25rem;
+  --raum-3: 0.375rem;
+  --raum-4: 0.5rem;
+  --raum-5: 0.75rem;
+  --raum-6: 1rem;
+  --raum-7: 1.5rem;
+  --raum-8: 2rem;
+  --raum-9: 3rem;
+  --raum-10: 4rem;
+  --raum-11: 6rem;
+  --raum-12: 8rem;
+  
+  /* Strich */
+  --strich-0: 1px;
+  --strich-1: 3px;
+  
+  /* Zeilenhoehe, medienunabhaengig weil bereits Verhaeltnis */
+  --zeile-display: 1.08;
+  --zeile-ueberschrift: 1.2;
+  --zeile-text: 1.5;
+  --zeile-meta: 1.4;
+  --zeile-versal: 1.2;
+  
+  /* Laufweite */
+  --spur-display: -0.02em;
+  --spur-gross: -0.01em;
+  --spur-text: 0em;
+  --spur-versal: 0.08em;
+  --spur-mono: 0em;
+  
+  /* Zeilenlaenge */
+  --mass-text: 72ch;
+  --mass-text-serif: 64ch;
+  --mass-prosa-web: 68ch;
+  --mass-claim: 22ch;
+  
+  /* Tinte */
+  --tinte-95: #0B0E12;
+  --tinte-90: #15181D;
+  --tinte-80: #262A31;
+  --tinte-70: #3C4149;
+  --tinte-60: #565B63;
+  --tinte-50: #6C7280;
+  --tinte-40: #8E949D;
+  --tinte-30: #B0B6BD;
+  --tinte-20: #D2D6DB;
+  --tinte-10: #E7EAEE;
+  --tinte-05: #F4F6F8;
+  --weiss: #FFFFFF;
+  
+  /* Rollen, hell */
+  --flaeche: var(--weiss);
+  --flaeche-gehoben: var(--tinte-05);
+  --tinte: var(--tinte-90);
+  --tinte-gedaempft: var(--tinte-60);
+  --tinte-leise: var(--tinte-50);
+  --linie: var(--tinte-20);
+  --linie-stark: var(--tinte-40);
+  
+  /* Bewegung */
+  --dauer-0: 0ms;
+  --dauer-1: 120ms;
+  --dauer-2: 200ms;
+  --dauer-3: 320ms;
+  --kurve-aus: cubic-bezier(0.2, 0, 0, 1);
+  --kurve-ein-aus: cubic-bezier(0.4, 0, 0.6, 1);
+
+  /* Englische Aliase, generiert */
+  --type-m2: var(--schrift-m2);
+  --type-m1: var(--schrift-m1);
+  --type-0: var(--schrift-0);
+  --type-1: var(--schrift-1);
+  --type-3: var(--schrift-3);
+  --type-6: var(--schrift-6);
+  --type-9: var(--schrift-9);
+  --space-0: var(--raum-0);
+  --space-1: var(--raum-1);
+  --space-2: var(--raum-2);
+  --space-3: var(--raum-3);
+  --space-4: var(--raum-4);
+  --space-5: var(--raum-5);
+  --space-6: var(--raum-6);
+  --space-7: var(--raum-7);
+  --space-8: var(--raum-8);
+  --space-9: var(--raum-9);
+  --space-10: var(--raum-10);
+  --space-11: var(--raum-11);
+  --space-12: var(--raum-12);
+  --stroke-0: var(--strich-0);
+  --stroke-1: var(--strich-1);
+  --leading-display: var(--zeile-display);
+  --leading-ueberschrift: var(--zeile-ueberschrift);
+  --leading-text: var(--zeile-text);
+  --leading-meta: var(--zeile-meta);
+  --leading-versal: var(--zeile-versal);
+  --tracking-display: var(--spur-display);
+  --tracking-gross: var(--spur-gross);
+  --tracking-text: var(--spur-text);
+  --tracking-versal: var(--spur-versal);
+  --tracking-mono: var(--spur-mono);
+  --measure-text: var(--mass-text);
+  --measure-text-serif: var(--mass-text-serif);
+  --measure-prosa-web: var(--mass-prosa-web);
+  --measure-claim: var(--mass-claim);
+  --ink-95: var(--tinte-95);
+  --ink-90: var(--tinte-90);
+  --ink-80: var(--tinte-80);
+  --ink-70: var(--tinte-70);
+  --ink-60: var(--tinte-60);
+  --ink-50: var(--tinte-50);
+  --ink-40: var(--tinte-40);
+  --ink-30: var(--tinte-30);
+  --ink-20: var(--tinte-20);
+  --ink-10: var(--tinte-10);
+  --ink-05: var(--tinte-05);
+  --white: var(--weiss);
+  --surface: var(--flaeche);
+  --surface-gehoben: var(--flaeche-gehoben);
+  --ink: var(--tinte);
+  --ink-gedaempft: var(--tinte-gedaempft);
+  --ink-leise: var(--tinte-leise);
+  --rule: var(--linie);
+  --rule-stark: var(--linie-stark);
+  --duration-0: var(--dauer-0);
+  --duration-1: var(--dauer-1);
+  --duration-2: var(--dauer-2);
+  --duration-3: var(--dauer-3);
+  --easing-aus: var(--kurve-aus);
+  --easing-ein-aus: var(--kurve-ein-aus);
+}
+
+/* Dunkelmodus: nur Rollen kippen, nie die Rampe. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --flaeche: var(--tinte-95);
+    --flaeche-gehoben: var(--tinte-90);
+    --tinte: var(--tinte-10);
+    --tinte-gedaempft: var(--tinte-30);
+    --tinte-leise: var(--tinte-40);
+    --linie: var(--tinte-80);
+    --linie-stark: var(--tinte-50);
+  }
+}
+
+:root[data-thema="dunkel"] {
+  --flaeche: var(--tinte-95);
+  --flaeche-gehoben: var(--tinte-90);
+  --tinte: var(--tinte-10);
+  --tinte-gedaempft: var(--tinte-30);
+  --tinte-leise: var(--tinte-40);
+  --linie: var(--tinte-80);
+  --linie-stark: var(--tinte-50);
+}
+
+:root[data-thema="hell"] {
+  --flaeche: var(--weiss);
+  --flaeche-gehoben: var(--tinte-05);
+  --tinte: var(--tinte-90);
+  --tinte-gedaempft: var(--tinte-60);
+  --tinte-leise: var(--tinte-50);
+  --linie: var(--tinte-20);
+  --linie-stark: var(--tinte-40);
+}
