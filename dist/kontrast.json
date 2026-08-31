@@ -85,6 +85,51 @@
     }
   },
   "akzente": {
+    "akzent": {
+      "hell": {
+        "hex": "#BF3B00",
+        "kontrast": 5.47
+      },
+      "dunkel": {
+        "hex": "#FF4F00",
+        "kontrast": 5.87
+      },
+      "flaeche": {
+        "hex": "#FF4F00",
+        "hell": 3.3,
+        "dunkel": 5.87
+      }
+    },
+    "akzent-2": {
+      "hell": {
+        "hex": "#CD0B72",
+        "kontrast": 5.4
+      },
+      "dunkel": {
+        "hex": "#F4369C",
+        "kontrast": 5.39
+      },
+      "flaeche": {
+        "hex": "#E8007D",
+        "hell": 4.44,
+        "dunkel": 4.35
+      }
+    },
+    "akzent-3": {
+      "hell": {
+        "hex": "#0967D3",
+        "kontrast": 5.4
+      },
+      "dunkel": {
+        "hex": "#2687F6",
+        "kontrast": 5.41
+      },
+      "flaeche": {
+        "hex": "#0A84FF",
+        "hell": 3.65,
+        "dunkel": 5.3
+      }
+    },
     "oxidrot": {
       "register": "E1 editorial",
       "hell": {

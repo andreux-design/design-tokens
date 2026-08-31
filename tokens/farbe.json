@@ -40,7 +40,15 @@
 
   "akzent": {
     "_aufgabe": "Der Akzent markiert etwas Überprüfbares: Link, Quelle, Ergebnislabel. Keine Überschriften, keine Dekoration, keine Markenstimmung. Sobald die Aufgabe feststeht, hört die Frage nach der Anzahl auf.",
-    "_offen": "Welcher Kandidat gewinnt, entscheidet die Erkundung. Bis dahin ist keiner als Standard gesetzt.",
+    "_entschieden": "31.08.2026. Drei Akzente, jeder mit einer Aufgabe. akzent traegt die Flaeche, akzent-2 und akzent-3 markieren die zweite und dritte Saeule der Positionierung. Eine Farbe ohne Aufgabe ist Dekoration. Die zwei Orangewerte lagen bis dahin nur in design/erkundung/e4.css des Repos bewerbungen-2026 und damit ausserhalb des Systems.",
+    "_gemessen": "WCAG-Kontrast am 31.08.2026 gegen weiss und gegen tinte-95. Text: 5,47 / 5,87 Orange, 5,40 / 5,40 Magenta, 5,41 / 5,40 Blau. Flaechen, wo 1.4.11 nur 3:1 verlangt: 3,30 / 5,87 Orange, 4,44 / 4,35 Magenta, 3,65 / 5,30 Blau. Magenta und Blau sind nicht gegriffen, sondern gesucht: die hellste Fassung, die auf weiss noch 5,4:1 erreicht, und die dunkelste, die auf tinte-95 noch 5,4:1 erreicht.",
+    "_warum_zwei_werte": "Textliches und Flaechiges haben verschiedene Schwellen, 4,5:1 gegen 3:1. Ein Wert fuer beides waere entweder als Flaeche zu blass oder als Text nicht zugelassen. Im Dunkelmodus wird der Flaechenwert zum Textwert, weil er auf dunklem Grund die Textschwelle erreicht und der helle nicht.",
+    "system": {
+      "akzent":   { "hell": "#BF3B00", "dunkel": "#FF4F00", "flaeche": "#FF4F00", "_": "International Orange, das Orange der Shuttle-Tanks und Startanzuege (André, 31.08.2026). Nicht das Rot des NASA-Worm, Pantone 179." },
+      "akzent-2": { "hell": "#CD0B72", "dunkel": "#F4369C", "flaeche": "#E8007D", "_": "Markiert die zweite Saeule, KI-gestuetzte Systeme." },
+      "akzent-3": { "hell": "#0967D3", "dunkel": "#2687F6", "flaeche": "#0A84FF", "_": "Markiert die dritte Saeule, Conversion." }
+    },
+    "_kandidaten": "Bleiben stehen, weil die drei Erkundungsprojektionen E1 bis E3 sie referenzieren. Sie sind Negativbeispiele, keine Auswahl.",
     "kandidaten": {
       "oxidrot": { "hell": "#8A3324", "dunkel": "#E8927A", "register": "E1 editorial" },
       "petrol": { "hell": "#155E75", "dunkel": "#6FC5DE", "register": "E2 technisch" },

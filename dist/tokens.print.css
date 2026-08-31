@@ -1,6 +1,6 @@
 /* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
  * Medium:      druck
- * Quell-Hash:  65a8ad65b978
+ * Quell-Hash:  dfb839328b1a
  * Aenderungen gehoeren nach tokens/, dann neu generieren.
  */
 :root {
@@ -74,6 +74,14 @@
   --tinte-leise: var(--tinte-50);
   --linie: var(--tinte-20);
   --linie-stark: var(--tinte-40);
+  
+  /* Akzente, hell */
+  --akzent-text: #BF3B00;
+  --akzent-flaeche: #FF4F00;
+  --akzent-2-text: #CD0B72;
+  --akzent-2-flaeche: #E8007D;
+  --akzent-3-text: #0967D3;
+  --akzent-3-flaeche: #0A84FF;
 
   /* Englische Aliase, generiert */
   --type-m3: var(--schrift-m3);
@@ -131,4 +139,10 @@
   --ink-leise: var(--tinte-leise);
   --rule: var(--linie);
   --rule-stark: var(--linie-stark);
+  --accent-text: var(--akzent-text);
+  --accent-flaeche: var(--akzent-flaeche);
+  --accent-2-text: var(--akzent-2-text);
+  --accent-2-flaeche: var(--akzent-2-flaeche);
+  --accent-3-text: var(--akzent-3-text);
+  --accent-3-flaeche: var(--akzent-3-flaeche);
 }

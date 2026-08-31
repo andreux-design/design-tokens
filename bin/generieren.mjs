@@ -151,6 +151,15 @@ function tokenZeilen(medium, mediumName) {
   z.push("", "/* Rollen, hell */");
   Object.entries(farbe.rollen.hell).forEach(([k, v]) => z.push(`--${k}: var(--${v});`));
 
+  // Akzente. Zwei Werte je Akzent, weil Textliches 4,5:1 braucht und
+  // Flaechiges nach WCAG 1.4.11 nur 3:1. Ein Wert fuer beides waere als
+  // Flaeche zu blass oder als Text nicht zugelassen. Begruendung und
+  // gemessene Kontraste stehen in tokens/farbe.json.
+  z.push("", "/* Akzente, hell */");
+  Object.entries(farbe.akzent.system).forEach(([k, a]) => {
+    z.push(`--${k}-text: ${a.hell};`, `--${k}-flaeche: ${a.flaeche};`);
+  });
+
   if (mediumName === "web") {
     z.push("", "/* Bewegung */");
     z.push("--dauer-0: 0ms;", "--dauer-1: 120ms;", "--dauer-2: 200ms;", "--dauer-3: 320ms;");
@@ -181,12 +190,20 @@ function baue(mediumName) {
   css += ":root {\n" + block(zeilen) + "\n\n  /* Englische Aliase, generiert */\n" + block(aliase) + "\n}\n";
 
   if (medium.dunkelmodus) {
-    const dunkel = Object.entries(farbe.rollen.dunkel).map(([k, v]) => `--${k}: var(--${v});`);
+    const dunkel = [
+      ...Object.entries(farbe.rollen.dunkel).map(([k, v]) => `--${k}: var(--${v});`),
+      // Nur die Textwerte kippen. Die Flaeche bleibt in beiden Themen dieselbe
+      // Farbe, sie erreicht auf beiden Gruenden ihre 3:1.
+      ...Object.entries(farbe.akzent.system).map(([k, a]) => `--${k}-text: ${a.dunkel};`),
+    ];
     css += "\n/* Dunkelmodus: nur Rollen kippen, nie die Rampe. */\n";
     css += "@media (prefers-color-scheme: dark) {\n  :root {\n" + block(dunkel, "    ") + "\n  }\n}\n";
     css += '\n:root[data-thema="dunkel"] {\n' + block(dunkel) + "\n}\n";
-    css += '\n:root[data-thema="hell"] {\n' +
-      block(Object.entries(farbe.rollen.hell).map(([k, v]) => `--${k}: var(--${v});`)) + "\n}\n";
+    const hell = [
+      ...Object.entries(farbe.rollen.hell).map(([k, v]) => `--${k}: var(--${v});`),
+      ...Object.entries(farbe.akzent.system).map(([k, a]) => `--${k}-text: ${a.hell};`),
+    ];
+    css += '\n:root[data-thema="hell"] {\n' + block(hell) + "\n}\n";
   }
 
   // Harte Zusicherung statt Konvention: die Druckausgabe darf keine

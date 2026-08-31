@@ -71,10 +71,42 @@ for (const [thema, rollen] of Object.entries(farbe.rollen)) {
   }
 }
 
-// Akzentkandidaten gegen die jeweilige Themenfläche
-console.log("\nAkzentkandidaten");
 const flaecheHell = aufloesen(farbe.rollen.hell.flaeche);
 const flaecheDunkel = aufloesen(farbe.rollen.dunkel.flaeche);
+
+// Die entschiedenen Akzente. Zwei Werte je Akzent, zwei Schwellen: Text
+// braucht 4,5:1, eine Flaeche nach WCAG 1.4.11 nur 3:1. Beide werden gegen
+// BEIDE Themenflaechen geprueft, weil dieselbe Flaechenfarbe in hell und
+// dunkel steht.
+console.log("\nAkzente, entschieden");
+for (const [name, a] of Object.entries(farbe.akzent.system)) {
+  const werte = {
+    "Text hell":     [kontrast(a.hell, flaecheHell),      farbe.schwellen.akzent],
+    "Text dunkel":   [kontrast(a.dunkel, flaecheDunkel),  farbe.schwellen.akzent],
+    "Flaeche hell":  [kontrast(a.flaeche, flaecheHell),   farbe.schwellen["linie-stark"]],
+    "Flaeche dunkel":[kontrast(a.flaeche, flaecheDunkel), farbe.schwellen["linie-stark"]],
+  };
+  const alleOk = Object.values(werte).every(([w, s]) => w >= s);
+  if (!alleOk) fehler++;
+  bericht.akzente[name] = {
+    hell: { hex: a.hell, kontrast: Number(werte["Text hell"][0].toFixed(2)) },
+    dunkel: { hex: a.dunkel, kontrast: Number(werte["Text dunkel"][0].toFixed(2)) },
+    flaeche: {
+      hex: a.flaeche,
+      hell: Number(werte["Flaeche hell"][0].toFixed(2)),
+      dunkel: Number(werte["Flaeche dunkel"][0].toFixed(2)),
+    },
+  };
+  console.log(`  ${alleOk ? "ok  " : "FEHL"} ${name}`);
+  for (const [was, [w, s]] of Object.entries(werte)) {
+    console.log(
+      `       ${w >= s ? "ok  " : "FEHL"} ${was.padEnd(15)} ${w.toFixed(2).padStart(6)}  gefordert ${s}`
+    );
+  }
+}
+
+// Akzentkandidaten gegen die jeweilige Themenfläche
+console.log("\nAkzentkandidaten (Negativbeispiele E1 bis E3)");
 
 for (const [name, k] of Object.entries(farbe.akzent.kandidaten)) {
   const h = kontrast(k.hell, flaecheHell);

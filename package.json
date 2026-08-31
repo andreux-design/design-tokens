@@ -1,10 +1,13 @@
 {
   "name": "@andreux/design-tokens",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Typografisches Tokensystem mit einer einheitenlosen Leiter und zwei Projektionen, Druck und Web.",
   "license": "MIT",
   "type": "module",
-  "files": ["dist", "tokens"],
+  "files": [
+    "dist",
+    "tokens"
+  ],
   "exports": {
     "./print.css": "./dist/tokens.print.css",
     "./web.css": "./dist/tokens.web.css",
