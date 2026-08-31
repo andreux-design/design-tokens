@@ -37,7 +37,7 @@ das konsumierende Dokument setzt sich beim nächsten `install` still neu.
 |---|---|
 | `tokens/leiter.json` | Verhältnis und Stufen. Keine Einheiten, kein Medium |
 | `tokens/medien.json` | Projektion: Basis, Einheit, Raster je Medium |
-| `tokens/farbe.json` | Rampe, Rollen, Akzentkandidaten, Kontrastschwellen |
+| `tokens/farbe.json` | Rampe, Rollen, **drei entschiedene Akzente**, Kandidaten der Erkundungen, Kontrastschwellen |
 | `tokens/erkundungen.json` | Temporär, für die Registervergleiche. Fällt weg |
 | `dist/` | Generiert und **eingecheckt**, siehe README |
 
@@ -50,6 +50,24 @@ eine eigene Schicht über der Rampe.
 
 **Der Fokusring ist nie der Akzent.** Alle drei Akzentkandidaten liegen auf
 dunklem Grund zwischen 2,38 und 2,80 und wären dort unsichtbar.
+
+**Drei entschiedene Akzente seit v1.1.0, 31.08.2026.** Sie stehen unter
+`akzent.system` und sind etwas anderes als die Kandidaten darunter: die
+Kandidaten gehören zu den Erkundungsprojektionen E1 bis E3 und sind
+Negativbeispiele, die entschiedenen tragen die Arbeit.
+
+Jeder hat **zwei Werte**, weil Text 4,5:1 braucht und eine Fläche nach WCAG
+1.4.11 nur 3:1. Ein Wert für beides wäre als Fläche zu blass oder als Text
+nicht zugelassen. Im Dunkelmodus wird der Flächenwert zum Textwert: er erreicht
+auf dunklem Grund 5,87:1, der helle nur 3,54:1.
+
+`akzent` ist International Orange, `#FF4F00`. `akzent-2` und `akzent-3`
+markieren die zweite und dritte Säule der Positionierung. Beide sind nicht
+gegriffen, sondern gesucht: die hellste Fassung, die auf Weiß noch 5,4:1
+erreicht, und die dunkelste, die auf `tinte-95` noch 5,4:1 erreicht.
+
+`bin/kontrast.mjs` prüft sie, zwölf Messungen. **Wer einen Wert ändert, ohne
+den Test zu bestehen, bricht den Bau.**
 
 ## Nicht hierher
 
