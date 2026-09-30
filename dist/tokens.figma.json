@@ -1,6 +1,6 @@
 {
   "_hinweis": "Manueller Import. Keine Synchronisation, es gibt keine Gegenstelle.",
-  "quellHash": "dfb839328b1a",
+  "quellHash": "14916dd2569f",
   "farbe": {
     "tinte-95": "#0B0E12",
     "tinte-90": "#15181D",
@@ -22,7 +22,8 @@
     "schrift-1": "1.1875rem",
     "schrift-3": "1.5rem",
     "schrift-6": "2.125rem",
-    "schrift-9": "3.0625rem"
+    "schrift-9": "3.0625rem",
+    "schrift-12": "4.375rem"
   },
   "raum": {
     "raum-0": "0.125rem",

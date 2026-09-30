@@ -1,5 +1,5 @@
 {
-  "quellHash": "dfb839328b1a",
+  "quellHash": "14916dd2569f",
   "verhaeltnis": 1.125,
   "druck": [
     {
@@ -73,6 +73,11 @@
       "n": 9,
       "wert": 3.0625,
       "css": "3.0625rem"
+    },
+    {
+      "n": 12,
+      "wert": 4.375,
+      "css": "4.375rem"
     }
   ],
   "raumDruck": [

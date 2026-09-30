@@ -5,8 +5,8 @@
   "schrift": {
     "verhaeltnis": 1.125,
     "_verhaeltnis": "Große Sekunde. Bewusst eng: der gesamte nutzbare Bereich im CV liegt zwischen etwa 6,75 und 19,25 pt. Bei 1,25 passen dort nur fünf Stufen, und dann fehlt eine eigene Größe für Meta, Label und Fließtext gleichzeitig.",
-    "stufen": [-3, -2, -1, 0, 1, 2, 3, 4, 6, 9],
-    "_stufen": "Display-Größen tasten jede dritte Stufe ab. Damit ist das wirksame Überschriftenverhältnis 1,125^3 = 1,4238, ohne dass ein zweites Verhältnis eingeführt wird."
+    "stufen": [-3, -2, -1, 0, 1, 2, 3, 4, 6, 9, 12],
+    "_stufen": "Display-Größen tasten jede dritte Stufe ab. Damit ist das wirksame Überschriftenverhältnis 1,125^3 = 1,4238, ohne dass ein zweites Verhältnis eingeführt wird. Stufe 12 seit dem 30.09.2026 (André): die Website endete bei 9, also 49px, obwohl ihre Textspalte am Desktop 1152px breit ist; 12 ist der nächste dritte Schritt und ergibt 70px."
   },
 
   "raum": {
