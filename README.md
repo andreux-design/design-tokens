@@ -15,7 +15,7 @@ Weder Druck noch Web ist die Quelle. Quelle ist eine Leiter aus reinen Zahlen:
 
 ```jsonc
 // tokens/leiter.json
-{ "schrift": { "verhaeltnis": 1.125, "stufen": [-3, -2, -1, 0, 1, 2, 3, 4, 6, 9, 12] } }
+{ "schrift": { "verhaeltnis": 1.125, "stufen": [-3, -2, -1, 0, 1, 2, 3, 4, 6, 9, 12, 15] } }
 ```
 
 Jedes Medium ist eine Projektion mit eigener Basis, Einheit und Rasterung:

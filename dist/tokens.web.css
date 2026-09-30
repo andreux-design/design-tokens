@@ -1,6 +1,6 @@
 /* GENERIERT von bin/generieren.mjs. Nicht bearbeiten.
  * Medium:      web
- * Quell-Hash:  14916dd2569f
+ * Quell-Hash:  c4220cc5c69a
  * Aenderungen gehoeren nach tokens/, dann neu generieren.
  */
 :root {
@@ -13,6 +13,7 @@
   --schrift-6: 2.125rem;
   --schrift-9: 3.0625rem;
   --schrift-12: 4.375rem;
+  --schrift-15: 6.1875rem;
   
   /* Raum */
   --raum-0: 0.125rem;
@@ -101,6 +102,7 @@
   --type-6: var(--schrift-6);
   --type-9: var(--schrift-9);
   --type-12: var(--schrift-12);
+  --type-15: var(--schrift-15);
   --space-0: var(--raum-0);
   --space-1: var(--raum-1);
   --space-2: var(--raum-2);
