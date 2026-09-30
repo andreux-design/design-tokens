@@ -1,6 +1,6 @@
 {
   "name": "@andreux/design-tokens",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Typografisches Tokensystem mit einer einheitenlosen Leiter und zwei Projektionen, Druck und Web.",
   "license": "MIT",
   "type": "module",
